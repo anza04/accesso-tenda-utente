@@ -7,13 +7,13 @@ export default function ComingSoon(){
     return(
         <>
         <div className="comingSoon">
-            <h1>Ops!<br/>Sei in anticipo!</h1>
+            <div className='titolo-coming-soon'>Ops!<br/>Sei in anticipo!</div>
             <div className="countdown">
-                <h2>Registrazione disponibile tra:</h2>
+                <div className='sottotitolo-coming-soon'>Registrazione disponibile tra:</div>
                 <Countdown date={Date.UTC(2023, 4, 30, 9, 0, 0)} />
             </div>
             <div className="info">
-                <h3>Ci troverai nell'area esterna di Como Next durante la Giornata Dell'innovazione 2023 per provare tutte le tecnologie di ProCivilTech</h3> 
+                <div className='corpo-coming-soon'>Ci troverai nell'area esterna di Como Next durante la Giornata Dell'innovazione 2023 per provare tutte le tecnologie di ProCivilTech</div> 
             </div>
         </div>
         </>
