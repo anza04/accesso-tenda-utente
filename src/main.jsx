@@ -5,13 +5,14 @@ import './index.css'
 import Homepage from './homepage'
 import Accedi from './accedi'
 import Show from './show'
+import ComingSoon from './coming-soon'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Homepage />,
+    element: <ComingSoon />,
   },
   {
     path: '/signup',

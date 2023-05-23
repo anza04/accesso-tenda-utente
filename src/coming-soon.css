@@ -1,0 +1,53 @@
+.comingSoon{
+    background: #006BB6;
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1, h2{
+    width: 85%;
+    text-align: center;
+}
+
+h1{
+    font-size: 45px !important;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 5%;
+}
+ 
+.countdown{
+    border: #FF6600 solid 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+span{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: -1.0px -1.0px 0 #FF6600, 1.0px -1.0px 0 #FF6600, -1.0px 1.0px 0 #FF6600, 1.0px 1.0px 0 #FF6600;
+}
