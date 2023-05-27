@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import {MD5} from 'crypto-js/md5'
 
 export default function Accedi()
 {
@@ -15,7 +16,7 @@ export default function Accedi()
 
         await axios.get("https://protezione-civile-server.onrender.com/accessoTenda")
         .then(
-            (res)=>{res.data[user]==pw?navigate("../show?user="+user):setError(1)}
+            (res)=>{res.data[user]==MD5(pw)?navigate("../show?user="+user):setError(1)}
         );
     };
 

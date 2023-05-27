@@ -16,7 +16,6 @@ export default function Signup()
         if(user != "" && pw != "" )
             await axios.post("https://protezione-civile-server.onrender.com/aggiungiTenda", {username: user, pw: pw}).then(navigate("../show?user="+user));
         
-        
     };
 
     return(
