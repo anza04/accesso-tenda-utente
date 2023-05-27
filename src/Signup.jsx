@@ -13,7 +13,8 @@ export default function Signup()
         const user = document.getElementById("username").value;
         const pw = document.getElementById("password").value;
 
-        await axios.post("https://protezione-civile-server.onrender.com/aggiungiTenda", {username: user, pw: pw}).then(navigate("../show?user="+user));
+        if(user != "" && pw != "" )
+            await axios.post("https://protezione-civile-server.onrender.com/aggiungiTenda", {username: user, pw: pw}).then(navigate("../show?user="+user));
         
         
     };
