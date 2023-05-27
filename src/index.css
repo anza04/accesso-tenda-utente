@@ -99,11 +99,11 @@ input{
 }
 
 img{
-  position: absolute;
-  top: 65%;
-  left: 50%;
+  position: absolute !important;
+  top: 65% !important;
+  left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  width: 70svw;
+  width: 70svw !important;
 }
 
 button {
